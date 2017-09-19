@@ -1,4 +1,4 @@
-# Product Name Goes Here
+Grafana
 A note about what the product is and what this integration/scriptlet is all about. Check out the sweet video [here](media/mysweetvideo.mov). Be sure to indicate what type of integration or enhancement you're building! (One-way or closed-loop integration? Script library? Feature update? Enhancement to an existing integration?)
 
 # Pre-Requisites
