@@ -19,17 +19,27 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 3. Enable the plan, click Edit and get into the "Integration Builder"
 4. Click into the Inbound integration labeled "Inbound from Grafana" and navigate to the Script Editor on Step 5
 5. Insert your group recipient(s) where it says [INSERT GROUPS HERE]. 
-```
 <kbd>
-  <img src="media/InsertGroupHere.png">
+  <img src="InsertGroupHere.png">
 </kbd>
-```
 
-1. Steps to create a new Shared Library or (in|out)bound integration or point them to the xMatters online help to cover specific steps; i.e., import a communication plan (link: http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
+6. Save and return to the previous page. Click on "Update Inbound Integration" and copy the URL to have it handy later.
+<kbd>
+  <img src="xMattersURL.png">
+</kbd>
+
+7. Follow the bread crumb back to the integration builder in for "Grafana Alert" and click on the "Shared Libraries" and click on Grafana.
+8. Insert the API Key you generated in Grafana into the code.
+<kbd>
+  <img src="APIKeysGrafana.png">
+</kbd>
 
 
 
-## Application ABC set up
+
+
+
+## Grafana set up
 Any specific steps for setting up the target application? The more precise you can be, the better!
 
 Images are encouraged. Adding them is as easy as:
