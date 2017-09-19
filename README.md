@@ -30,9 +30,7 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 
 7. Follow the bread crumb back to the integration builder in for "Grafana Alert" and click on the "Shared Libraries" and click on Grafana.
 8. Insert the API Key you generated in Grafana into the code.
-<kbd>
-  <img src="APIKeysGrafana.png">
-</kbd>
+
 
 
 
