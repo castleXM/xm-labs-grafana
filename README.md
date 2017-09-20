@@ -57,7 +57,7 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 
 
 ## General Notes
-* How to set up the Grafana API Key to plug into xMatters
+* How to set up the Grafana API Key to plug into xMatters. **PLEASE NOTE: Grafana will only show the API you created ONCE. Suggestion is to copy and paste it in a notepad somewhere so you can get to it if you ever need it again**
 <kbd>
   <img src="APIKeysGrafana.png">
 </kbd>
