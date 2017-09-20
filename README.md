@@ -24,18 +24,21 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 <kbd>
   <img src="media/GrafanaGroup.png" height=500>
 </kbd>
-6. Save changes and return to the previous page. Click on Edit, then "Integration Builder" and copy the URL at the bottom to have it handy later.
+
+5. Save changes and return to the previous page. Click on Edit, then "Integration Builder" and copy the URL at the bottom to have it handy later.
 <kbd>
   <img src="media/xMattersURL.png">
 </kbd>
 
 
-7. Close the "Update Inbound Integration" and return to the main page of the Integration Builder. On this main page, at the bottom are shared libraries. Select or edit the Grafana Library.
-8. Insert the API Key you generated in Grafana into the code. Reference "General Notes" section on how to generate the API key 
+6. Close the "Update Inbound Integration" and return to the main page of the Integration Builder. On this main page, at the bottom are shared libraries. Select or edit the Grafana Library.
+7. Insert the API Key you generated in Grafana into the code. Reference "General Notes" section on how to generate the API key 
 <kbd>
   <img src="media/InsertAPIKey.png" height=500>
 </kbd>
-9. Add the Grafana Endpoint by clicking on "Edit Endpoints" in the Integration Builder. Add an endpoint and name it "Grafana". Add the URL to your Grafana instance. Make sure you save changes. 
+
+
+8. Add the Grafana Endpoint by clicking on "Edit Endpoints" in the Integration Builder. Add an endpoint and name it "Grafana". Add the URL to your Grafana instance. Make sure you save changes. 
 <kbd>
   <img src="media/GrafanaEndPoint.png" height=500>
 </kbd>
