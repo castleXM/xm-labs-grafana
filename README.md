@@ -4,6 +4,14 @@ Grafana is an open source metric analytics & visualization suite. It is most com
 
 [![Grafana Integration](https://img.youtube.com/vi/Dj2sEaZzXi0/0.jpg)](https://www.youtube.com/watch?v=Dj2sEaZzXi0&feature=youtu.be)
 
+---------
+
+<kbd>
+  <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</kbd>
+
+---------
+
 # Pre-Requisites
 * [Grafana](https://grafana.com/) version 4.4.3
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
