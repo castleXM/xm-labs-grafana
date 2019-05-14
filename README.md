@@ -40,7 +40,7 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 
 
 6. Close the "Update Inbound Integration" and return to the main page of the Integration Builder. On this main page, at the bottom are shared libraries. Select or edit the Grafana Library.
-7. Insert the API Key you generated in Grafana into `Grafana Token` constant. Reference [General Notes](general-notes)" section on how to generate the API key 
+7. Insert the API Key you generated in Grafana into `Grafana Token` constant. Reference [General Notes](#general-notes) section on how to generate the API key 
 <kbd>
   <img src="media/GrafanaTokenConstant.png" height=300>
 </kbd>
