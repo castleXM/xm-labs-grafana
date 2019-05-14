@@ -40,9 +40,9 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 
 
 6. Close the "Update Inbound Integration" and return to the main page of the Integration Builder. On this main page, at the bottom are shared libraries. Select or edit the Grafana Library.
-7. Insert the API Key you generated in Grafana into the code. Reference "General Notes" section on how to generate the API key 
+7. Insert the API Key you generated in Grafana into `Grafana Token` constant. Reference [General Notes](general-notes)" section on how to generate the API key 
 <kbd>
-  <img src="media/InsertAPIKey.png" height=500>
+  <img src="media/GrafanaTokenConstant.png" height=300>
 </kbd>
 
 
@@ -58,7 +58,7 @@ An alert fires a webhook to the xMatters integration builder. The integration bu
 </kbd>
 
 
-2. Click on "New Channel" and create a new webhook found under "type". Name it, set Http Method to "POST", set URL as the URL you saved. **Reference step 6 in the xMatters set up for the URL**. Your channel should look something like this. **NOTE: If you want to test out and see if the webhook works, you can click "Send Test" at the bottom.
+2. Click on "New Channel" and create a new webhook found under "type". Name it, set Http Method to "POST", set URL as the URL you saved. **Reference step 6 in the xMatters set up for the URL**. Your channel should look something like this. **NOTE**: If you want to test out and see if the webhook works, you can click "Send Test" at the bottom.
 <kbd>
   <img src="media/GrafanaChannel.png" height=400>
 </kbd>
