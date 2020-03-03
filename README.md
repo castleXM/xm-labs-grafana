@@ -26,9 +26,8 @@ An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger
 
 ## xMatters set up
 1. Login as the integration user in xMatters and navigate to the Developer Tab. (NOTE: Make sure the integration user has **REST Web Services User** Role. Reference General Notes section on how to create API user in xMatters.
-2. Import the [GrafanaAlert.zip](GrafanaAlert.zip) Steps to import a communication plan: [Here]( http://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm)
-3. Enable the plan, click Edit and select "Layout"
-4. Insert your targeted reciepients into the recipient field
+2. Import the [GrafanaAlert.zip](GrafanaAlert.zip) Steps to a workflow.
+3. Click on the workflow, and then Edit>Layout on the Grafana Alert to modify the alert recipients.
 <kbd>
   <img src="media/GrafanaGroup.png" height=500>
 </kbd>
@@ -40,13 +39,13 @@ An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger
 
 
 6. Close the "Update Inbound Integration" and return to the main page of the Integration Builder. On this main page, at the bottom are shared libraries. Select or edit the Grafana Library.
-7. Insert the API Key you generated in Grafana into `Grafana Token` constant. Reference [General Notes](#general-notes) section on how to generate the API key 
+7. Insert the API Key you generated in Grafana into `Grafana Token` constant, Which is accessible in the Flow Designer under Components>Constants. Reference [General Notes](#general-notes) section on how to generate the API key 
 <kbd>
   <img src="media/GrafanaTokenConstant.png" height=300>
 </kbd>
 
 
-8. Add the Grafana Endpoint by clicking on "Edit Endpoints" in the Integration Builder. Add an endpoint and name it "Grafana". Add the URL to your Grafana instance. Make sure you save changes. 
+8. Add the Grafana Endpoint by clicking on Components>Endpoints in the Flow Designer. Add an endpoint and name it "Grafana". Add the URL to your Grafana instance. Make sure you save changes. 
 <kbd>
   <img src="media/GrafanaEndPoint.png" height=500>
 </kbd>
@@ -84,7 +83,7 @@ Click "Users", click "Invite Users" or "Add Users". Information should be someth
 If it requires an email, the email can be something like email@xmatters.com 
 
 # Testing
-Do an action in your Gafana application or infrastructure that will trigger the alert conditions set up in the Alert. This will fire the webhook into the inbound integration builder script and an event will be created, targeting the default recipients. After it targets the right person, you can use our 2-way integration by responding with "Pause Alert" to pause the alerting process in Grafana. Once you fix the issue in Grafana, you can come back to the original xMatters alert and use the response option "Resume Alert" to resume the alerting rule.
+Do an action in your Grafana application or infrastructure that will trigger the alert conditions set up in the Alert. This will fire the webhook into the workflow and an event will be created, targeting the default recipients. After it targets the right person, you can use our 2-way integration by responding with "Pause Alert" to pause the alerting process in Grafana. Once you fix the issue in Grafana, you can come back to the original xMatters alert and use the response option "Resume Alert" to resume the alerting rule.
 <kbd>
   <img src="media/GrafanaAlert1.png" height=500>
 </kbd>
@@ -95,17 +94,17 @@ If it doesn't work, then access the log to find out what's going wrong.
 Click the Activity button in the upper right of the screen.
 
 <kbd>
-  <img src="media/Activity.png" height=500>
+  <img src="media/Activity.png" height=400>
 </kbd>
 
-Select a flow element such as "Grafana Alert".
+Select a flow element such as "Grafana Alert - Inbound from Grafana".
 
 <kbd>
-  <img src="media/ActivityAlert.png" height=500>
+  <img src="media/ActivityAlert.png" height=400>
 </kbd>
 
 Select "Log" in order to view the log.
 
 <kbd>
-  <img src="media/ActivityLog.png" height=500>
+  <img src="media/ActivityLog.png" height=400>
 </kbd>
