@@ -29,25 +29,24 @@ An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger
 2. Import the [GrafanaAlert.zip](GrafanaAlert.zip) Steps to a workflow.
 3. Click on the workflow, and then Edit>Layout on the Grafana Alert to modify the alert recipients.
 <kbd>
-  <img src="media/GrafanaGroup.png" height=500>
+  <img src="media/GrafanaGroup.png" height=300>
 </kbd>
 
 4. Save changes and return to the previous page. Click on Flows, and then Grafana Alert.
 <kbd>
-  <img src="media/FlowDesigner.png">
+  <img src="media/FlowDesigner.png" height=300>
 </kbd>
 
 5. Select the "Grafana Alert - Inbound from Grafana" step.
 <kbd>
-  <img src="media/StepLocation.png">
+  <img src="media/StepLocation.png" height=300>
 </kbd>
 
 6. Copy the Initiation URL, this will be used for setting up an Alert Notification Channel in Grafana.
 <kbd>
-  <img src="media/InitiationURL.png">
+  <img src="media/InitiationURL.png" height=300>
 </kbd>
 
-6. Close the "Update Inbound Integration" and return to the main page of the Integration Builder. On this main page, at the bottom are shared libraries. Select or edit the Grafana Library.
 7. Insert the API Key you generated in Grafana into `Grafana Token` constant, Which is accessible in the Flow Designer under Components>Constants. Reference [General Notes](#general-notes) section on how to generate the API key 
 <kbd>
   <img src="media/GrafanaTokenConstant.png" height=300>
