@@ -55,7 +55,7 @@ An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger
 
 8. Add the Grafana Endpoint by clicking on Components>Endpoints in the Flow Designer. Add an endpoint and name it "Grafana". Add the URL to your Grafana instance. Make sure you save changes. 
 <kbd>
-  <img src="media/GrafanaEndPoint.png" height=500>
+  <img src="media/GrafanaEndPoint.png" height=300>
 </kbd>
 
 ## Grafana set up
