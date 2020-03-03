@@ -13,14 +13,14 @@ Grafana is an open source metric analytics & visualization suite. It is most com
 ---------
 
 # Pre-Requisites
-* [Grafana](https://grafana.com/) version 4.4.3
+* [Grafana](https://grafana.com/) version >=4.4.3
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
 * [GrafanaAlert.zip](GrafanaAlert.zip) - Communication Plan containing the Inbound and Outbound integration with form templates
 
 # How it works
-An alert fires a webhook to the xMatters integration builder. The integration builder parses the incoming JSON and builds the event, then fires the event to notify the default recipients. Alternatively [subscriptions](http://help.xmatters.com/OnDemand/userguide/receivingalerts/subscriptions/howtousesubscriptions.htm) can be set up to notify the desired parties. From the alert, you can pause the alert in Grafana to investigate the issue. When the issue is fixed, you can resume the alerting rule.  
+An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger parses the incoming JSON and builds the event, then fires the event to notify the default recipients. Alternatively [subscriptions](http://help.xmatters.com/OnDemand/userguide/receivingalerts/subscriptions/howtousesubscriptions.htm) can be set up to notify the desired parties. From the alert, you can pause the alert in Grafana to investigate the issue. When the issue is fixed, you can resume the alerting rule.  
 
 # Installation
 
@@ -90,13 +90,22 @@ Do an action in your Gafana application or infrastructure that will trigger the 
 </kbd>
 
 # Troubleshooting
- If it doesn't work, you can reference the "Activity Stream" of the integration. Please reference both screen shots to find the Activity Stream and what it should look like. You can look through the logs to see what the error is.
+If it doesn't work, then access the log to find out what's going wrong.
 
+Click the Activity button in the upper right of the screen.
 
 <kbd>
-  <img src="media/ActivityStream.png" height=500>
+  <img src="media/Activity.png" height=500>
 </kbd>
 
+Select a flow element such as "Grafana Alert".
+
 <kbd>
-  <img src="media/ActivityStreamLogs.png" height=500>
+  <img src="media/ActivityAlert.png" height=500>
+</kbd>
+
+Select "Log" in order to view the log.
+
+<kbd>
+  <img src="media/ActivityLog.png" height=500>
 </kbd>
