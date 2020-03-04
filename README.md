@@ -13,11 +13,11 @@ Grafana is an open source metric analytics & visualization suite. It is most com
 ---------
 
 # Pre-Requisites
-* [Grafana](https://grafana.com/) version >=4.4.3
+* [Grafana](https://grafana.com/)
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
 
 # Files
-* [GrafanaAlert.zip](GrafanaAlert.zip) - Communication Plan containing the Inbound and Outbound integration with form templates
+* [GrafanaAlert.zip](GrafanaAlert.zip) - Workflow containing the Inbound and Outbound integration with form templates
 
 # How it works
 An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger parses the incoming JSON and builds the event, then fires the event to notify the default recipients. Alternatively [subscriptions](http://help.xmatters.com/OnDemand/userguide/receivingalerts/subscriptions/howtousesubscriptions.htm) can be set up to notify the desired parties. From the alert, you can pause the alert in Grafana to investigate the issue. When the issue is fixed, you can resume the alerting rule.  
@@ -92,6 +92,7 @@ If it requires an email, the email can be something like email@xmatters.com
 
 # Testing
 Do an action in your Grafana application or infrastructure that will trigger the alert conditions set up in the Alert. This will fire the webhook into the workflow and an event will be created, targeting the default recipients. After it targets the right person, you can use our 2-way integration by responding with "Pause Alert" to pause the alerting process in Grafana. Once you fix the issue in Grafana, you can come back to the original xMatters alert and use the response option "Resume Alert" to resume the alerting rule.
+
 <kbd>
   <img src="media/GrafanaAlert1.png" height=500>
 </kbd>
