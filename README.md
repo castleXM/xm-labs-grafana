@@ -20,7 +20,7 @@ Grafana is an open source metric analytics & visualization suite. It is most com
 * [GrafanaAlert.zip](GrafanaAlert.zip) - Workflow containing the Grafana Steps. 
 
 # How it works
-An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger parses the incoming JSON and builds the event, then fires the event to notify the default recipients. Alternatively [subscriptions](http://help.xmatters.com/OnDemand/userguide/receivingalerts/subscriptions/howtousesubscriptions.htm) can be set up to notify the desired parties. From the alert, you can pause the alert in Grafana to investigate the issue. When the issue is fixed, you can resume the alerting rule. When the alert is resumed, then the xMatters events are terminated.
+An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger parses the incoming JSON and builds the event, then fires the event to notify the default recipients. Alternatively [subscriptions](http://help.xmatters.com/OnDemand/userguide/receivingalerts/subscriptions/howtousesubscriptions.htm) can be set up to notify the desired parties. From the alert, you can pause the alert in Grafana to investigate the issue. When the issue is fixed, you can resume the alerting rule. When the alerting status of the Grafana alert goes to "ok", then the flow terminates the existing xMatters events.
 
 # Installation
 
