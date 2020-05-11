@@ -28,9 +28,10 @@ An alert fires a webhook to the xMatters Workflow HTTP Trigger. The HTTP Trigger
 1. Login as the integration user in xMatters and navigate to the Developer Tab. (NOTE: Make sure the integration user has **REST Web Services User** Role. Reference General Notes section on how to create API user in xMatters.
 2. Import the [GrafanaAlert.zip](GrafanaAlert.zip) Steps to a workflow.
 3. Click on the workflow, and then Edit>Layout on the Grafana Alert to modify the alert recipients.
-<kbd>
-  <img src="media/GrafanaGroup.png" height=300>
-</kbd>
+<details>
+  <summary>Click for image</summary>
+  <img src="media/GrafanaGroup.png" height=300 />
+</details>
 
 4. Save changes and return to the previous page. Click on Flows, and then Grafana Alert.
 <kbd>
