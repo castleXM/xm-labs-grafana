@@ -12,6 +12,10 @@ Grafana is an open source metric analytics & visualization suite. It is most com
 
 ---------
 
+An updated version of this integration is available. You can install the new one-way version right from the Workflow Templates directory within your xMatters instance. [Learn more](http://help.xmatters.com/integrations/#cshid=Grafana).
+
+---------
+
 # Pre-Requisites
 * [Grafana](https://grafana.com/)
 * xMatters account - If you don't have one, [get one](https://www.xmatters.com)!
